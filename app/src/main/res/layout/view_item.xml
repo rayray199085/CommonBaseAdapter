@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:descendantFocusability="blocksDescendants"
+              android:paddingRight="10dp"
+              android:weightSum="3"
+              android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent"
+              android:layout_weight="1"
+              android:text="Title"
+              android:textColor="#444"
+              android:textSize="20sp"
+              android:id="@+id/id_title"
+              android:layout_height="0dp"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        <TextView android:layout_width="match_parent"
+                  android:text="Description"
+                  android:maxLines="1"
+                  android:layout_centerVertical="true"
+                  android:minLines="1"
+                  android:textColor="#898989"
+                  android:textSize="20sp"
+                  android:id="@+id/id_description"
+                  android:layout_height="wrap_content"/>
+        <CheckBox android:layout_width="wrap_content"
+                  android:id="@+id/id_cb"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:text="date"
+                  android:textColor="#898989"
+                  android:textSize="15sp"
+                  android:id="@+id/id_date"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:text="10086"
+                  android:padding="3dp"
+                  android:id="@+id/id_phone"
+                  android:gravity="center"
+                  android:textSize="12sp"
+                  android:drawablePadding="5dp"
+                  android:drawableLeft="@drawable/phone"
+                  android:background="#2ed667"
+                  android:textColor="#fff"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>
